@@ -12,6 +12,14 @@ import {
   ChevronRight
 } from "lucide-react";
 
+const assets = {
+  avatar: `${import.meta.env.BASE_URL}assets/gorshinka-avatar-real.jpg`,
+  video1: `${import.meta.env.BASE_URL}assets/gorshinka-video-1.jpg`,
+  video2: `${import.meta.env.BASE_URL}assets/gorshinka-video-2.jpg`,
+  video3: `${import.meta.env.BASE_URL}assets/gorshinka-video-3.jpg`,
+  video4: `${import.meta.env.BASE_URL}assets/gorshinka-video-4.jpg`,
+};
+
 export default function Home() {
   const [likes, setLikes] = useState({ 1: 420, 2: 385, 3: 512, 4: 298 });
   const [activeTab, setActiveTab] = useState<"all" | "mm2" | "challenges">("all");
@@ -35,7 +43,7 @@ export default function Home() {
         <div className="flex items-center gap-3">
           <div className="w-11 h-11 rounded-full bg-[#FF77A9] p-0.5 shadow-md flex items-center justify-center overflow-hidden">
             <img 
-              src="/manus-storage/gorshinka-avatar-real_dbeb3a15.jpg" 
+              src={assets.avatar} 
               alt="Горошинка" 
               className="w-full h-full object-cover rounded-full"
               onError={(e) => {
@@ -121,7 +129,7 @@ export default function Home() {
           <div className="paper-card p-4 rounded-3xl max-w-sm w-full transform -rotate-2 hover:rotate-0 transition-transform">
             <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-[#fff5f8]">
               <img 
-                src="/manus-storage/gorshinka-video-1_4dfb11fa.jpg" 
+                src={assets.video1} 
                 alt="Горошинка в MM2" 
                 className="w-full h-full object-cover"
               />
@@ -182,7 +190,7 @@ export default function Home() {
             <div>
               <div className="relative aspect-video rounded-xl overflow-hidden bg-stone-100 mb-4 border border-[#ffb3cc]">
                 <img 
-                  src="/manus-storage/gorshinka-video-2_301535ba.jpg" 
+                  src={assets.video2} 
                   alt="MM2 Set" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -220,7 +228,7 @@ export default function Home() {
             <div>
               <div className="relative aspect-video rounded-xl overflow-hidden bg-stone-100 mb-4 border border-[#ffb3cc]">
                 <img 
-                  src="/manus-storage/gorshinka-video-3_58adc824.jpg" 
+                  src={assets.video3} 
                   alt="Popular players" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -258,7 +266,7 @@ export default function Home() {
             <div>
               <div className="relative aspect-video rounded-xl overflow-hidden bg-stone-100 mb-4 border border-[#ffb3cc]">
                 <img 
-                  src="/manus-storage/gorshinka-video-4_ceec6ff5.jpg" 
+                  src={assets.video4} 
                   alt="Sets update" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />

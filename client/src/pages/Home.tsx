@@ -35,7 +35,7 @@ export default function Home() {
         <div className="flex items-center gap-3">
           <div className="w-11 h-11 rounded-full bg-[#FF77A9] p-0.5 shadow-md flex items-center justify-center overflow-hidden">
             <img 
-              src="/manus-storage/gorshinka-avatar_5622e63a.png" 
+              src="/manus-storage/gorshinka-avatar-real_dbeb3a15.jpg" 
               alt="Горошинка" 
               className="w-full h-full object-cover rounded-full"
               onError={(e) => {
@@ -121,12 +121,9 @@ export default function Home() {
           <div className="paper-card p-4 rounded-3xl max-w-sm w-full transform -rotate-2 hover:rotate-0 transition-transform">
             <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-[#fff5f8]">
               <img 
-                src="/manus-storage/gorshinka-mm2-1_d0728a5d.png" 
+                src="/manus-storage/gorshinka-video-1_4dfb11fa.jpg" 
                 alt="Горошинка в MM2" 
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  (e.target as HTMLImageElement).src = "https://images.unsplash.com/photo-1578632767115-351597cf2477?w=600&auto=format&fit=crop&q=80";
-                }}
               />
               <div className="absolute top-3 left-3 bg-[#FF77A9] text-white px-3 py-1 rounded-full text-xs font-bold shadow">
                 MM2 SHOWCASE 🌸
@@ -185,7 +182,7 @@ export default function Home() {
             <div>
               <div className="relative aspect-video rounded-xl overflow-hidden bg-stone-100 mb-4 border border-[#ffb3cc]">
                 <img 
-                  src="/manus-storage/gorshinka-mm2-2_c7e5310f.png" 
+                  src="/manus-storage/gorshinka-video-2_301535ba.jpg" 
                   alt="MM2 Set" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -223,7 +220,7 @@ export default function Home() {
             <div>
               <div className="relative aspect-video rounded-xl overflow-hidden bg-stone-100 mb-4 border border-[#ffb3cc]">
                 <img 
-                  src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w=600&auto=format&fit=crop&q=80" 
+                  src="/manus-storage/gorshinka-video-3_58adc824.jpg" 
                   alt="Popular players" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -261,7 +258,7 @@ export default function Home() {
             <div>
               <div className="relative aspect-video rounded-xl overflow-hidden bg-stone-100 mb-4 border border-[#ffb3cc]">
                 <img 
-                  src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&auto=format&fit=crop&q=80" 
+                  src="/manus-storage/gorshinka-video-4_ceec6ff5.jpg" 
                   alt="Sets update" 
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />

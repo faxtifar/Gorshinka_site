@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FFFDE7" />
+    <title>Горошинка — возвращаемся на главную</title>
+    <style>
+      :root { background: #FFFDE7; color: #3d222b; font-family: system-ui, sans-serif; }
+      body { display: grid; min-height: 100vh; margin: 0; place-items: center; background: #FFFDE7; }
+      main { max-width: 30rem; padding: 2.5rem; text-align: center; }
+      strong { display: block; margin-bottom: 1rem; color: #FF77A9; font-size: 2.6rem; }
+      p { line-height: 1.6; }
+      a { display: inline-block; margin-top: 1rem; padding: .8rem 1.2rem; border-radius: 999px; background: #3d222b; color: white; text-decoration: none; font-weight: 700; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <strong>горошинка 🌸</strong>
+      <p>Эта страница немного потерялась. Возвращаем тебя на главную.</p>
+      <a href="/Gorshinka_site/">на главную</a>
+    </main>
+    <script>
+      window.setTimeout(function () {
+        window.location.replace('/Gorshinka_site/');
+      }, 250);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --background: #FFFDE7;
+  --foreground: #3d222b;
+  --primary: #FF77A9;
+  --pink: #FF77A9;
+  --cream: #FFFDE7;
+}
+
+body {
+  margin: 0;
+  background-color: #FFFDE7;
+  color: #3d222b;
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+.paper-card {
+  background: #ffffff;
+  border: 2px dashed #ff94bb;
+  box-shadow: 4px 6px 0px rgba(255, 119, 169, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.paper-card:hover {
+  transform: translateY(-3px) rotate(-1deg);
+  box-shadow: 6px 8px 0px #ff77a9;
+}
